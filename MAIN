@@ -1,0 +1,19 @@
+#include <iostream>
+#include "Quadrado.h"
+#include "Triangulo.h"
+#include "Circulo.h"
+#include <string>
+
+using namespace std;
+
+int main(){
+	Triangulo *tri = new Triangulo(2,5);
+	Quadrado *qua = new Quadrado(5);
+	Circulo *cir = new Circulo(5);
+	
+	tri->calcularArea();
+	qua->calcularArea();
+	cir->calcularArea();
+	
+	return 0; 
+}
